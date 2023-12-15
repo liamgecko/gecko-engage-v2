@@ -1666,7 +1666,7 @@ $badge-text-danger:                 $bg-danger-text !default;
 // Avatars
 
 $avatar-font-size:      $font-size-sm !default;
-$avatar-font-weight:    $font-weight-medium !default;
+$avatar-font-weight:    $font-weight-semibold !default;
 $avatar-border:         1px solid $white !default;
 $avatar-border-radius:  $border-rounded !default;
 $avatar-bg:             $grey-300 !default;
@@ -1702,7 +1702,7 @@ $avatar-status-lg-size-y:     $avatar-status-lg-size-x !default;
 $avatar-status-xl-size-x:     $spacer * 1.5 !default;
 $avatar-status-xl-size-y:     $avatar-status-xl-size-x !default;
 
-$avatar-name-font-weight:     $font-weight-base !default;
+$avatar-name-font-weight:     $font-weight-medium !default;
 $avatar-name-margin:          $spacer !default;
 $avatar-name-font-size-base:  $font-size-sm !default;
 $avatar-name-font-size-xs:    $font-size-sm !default;

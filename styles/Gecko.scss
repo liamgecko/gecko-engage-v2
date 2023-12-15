@@ -22,8 +22,12 @@
     }
 
     .app-menu {
+        .dropdown-menu {
+            transform: translate3d(54px, 0, 0px) !important;
+        }
         li {
-            a {
+           > a,
+           > span > a {
                 background-color: #101A3C;
                 color: #D8E2F3;
                 font-size: 19px;
@@ -272,6 +276,32 @@
                         &:hover {
                             color: #64748b;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-nav {
+        li {
+            margin-bottom: 1px;
+            a {
+                color: #475569;
+                position: relative;
+                &.active,
+                &:hover {
+                    background-color: #f8fafc;
+                    color: #172554;
+                }
+                &.active {
+                    &:before {
+                        content: "";
+                        height: 24px;
+                        width: 4px;
+                        background: #2563eb;
+                        border-radius: 0 4px 4px 0;
+                        left: -16px;
+                        position: absolute;
                     }
                 }
             }
