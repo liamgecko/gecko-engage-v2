@@ -153,48 +153,48 @@
 
                                 <div class="sub-nav pe-10 border-end">
 
-                                    <ul class="d-flex flex-column list-unstyled">
-                                        <li><a href="" class="active d-flex p-4 rounded text-decoration-none fw-medium align-items-center">Basic information</a></li>
-                                        <li><a href="" class="d-flex p-4 rounded text-decoration-none fw-medium align-items-center">Location</a></li>
-                                        <li><a href="" class="d-flex p-4 rounded text-decoration-none fw-medium align-items-center">Attendee options</a></li>
-                                        <li><a href="" class="d-flex p-4 rounded text-decoration-none fw-medium align-items-center">Styling</a></li>
-                                        <li><a href="" class="d-flex p-4 rounded text-decoration-none fw-medium align-items-center">Advanced options</a></li>
+                                    <ul class="d-flex flex-column list-unstyled position-sticky">
+                                        <li><a href="#event-details" class="active d-flex py-3 px-5 rounded text-decoration-none fw-medium align-items-center">Basic information</a></li>
+                                        <li><a href="#event-location" class="d-flex py-3 px-5 rounded text-decoration-none fw-medium align-items-center">Location</a></li>
+                                        <li><a href="#event-attendees" class="d-flex py-3 px-5 rounded text-decoration-none fw-medium align-items-center">Attendee options</a></li>
+                                        <li><a href="#event-styling" class="d-flex py-3 px-5 rounded text-decoration-none fw-medium align-items-center">Styling</a></li>
+                                        <li><a href="#event-integrations" class="d-flex py-3 px-5 rounded text-decoration-none fw-medium align-items-center">Integrations</a></li>
                                     </ul>
 
                                 </div>
 
                                 <div class="col ps-10">
 
-                                    <div class="create-section mb-8 pb-8 border-bottom">
+                                    <div id="#event-details" class="create-section mb-10 pb-10 border-bottom">
                                         
-                                        <div class="mb-6">
+                                        <div class="mb-8">
                                             <h2 class="mb-0">Basic information</h2>
                                             <p class="text-secondary">Name your event and tell event-goers why they should come. Add details that highlight what makes it unique.</p>
                                         </div>
 
                                         <form>
-                                            <div class="mb-6">
+                                            <div class="mb-8">
                                                 <label for="answer-title" class="form-label">Event title <span class="required text-red-600">*</span></label>
-                                                <input type="text" class="form-control" id="answer-title">
+                                                <input type="text" class="form-control form-control-lg" id="answer-title">
                                             </div>
                                             <div class="row mb-2">
                                                 <div class="col">
                                                     <label for="answer-title" class="form-label">Event starts at <span class="required text-red-600">*</span></label>
                                                     <div class="input-icon input-icon-left">
-                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control">
+                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control form-control-lg">
                                                         <i class="far fa-calendar-days"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <label for="answer-title" class="form-label">Event ends at <span class="required text-red-600">*</span></label>
                                                     <div class="input-icon input-icon-left">
-                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control">
+                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control form-control-lg">
                                                         <i class="far fa-calendar-days"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <label for="answer-title" class="form-label">Timezone <span class="required text-red-600">*</span></label>
-                                                    <select aria-label="Default select example" class="form-select">
+                                                    <select aria-label="Default select example" class="form-select form-select-lg">
                                                         <option>Select timezone</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
@@ -202,7 +202,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="">
+                                            <div class="mb-8">
                                                 <div class="dropdown">
                                                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                       Does not repeat
@@ -229,11 +229,48 @@
                                                     </div>
                                                   </div>
                                             </div>
+                                            <div class="row mb-8">
+                                                <div class="col">
+                                                    <label for="answer-title" class="form-label">Registration closing date</label>
+                                                    <div class="input-icon input-icon-left">
+                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control form-control-lg">
+                                                        <i class="far fa-calendar-days"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+
+                                                </div>
+                                                <div class="col">
+
+                                                </div>
+                                            </div>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">What type of event are you holding? <span class="required text-red-600">*</span></label>
+                                                <small class="form-text d-block mb-2">Determines how the event should behave when displayed through event fields and RSVP pages. Visit our event <a href="">academy help page</a> for more information on the event types.</small>
+                                                <div role="group" class="btn-checkbox-group btn-group">
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-1" value="1">
+                                                    <label tabindex="-1" for="tbg-check-1" class="btn-radio btn btn-outline-primary">Single event</label>
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-2" value="2">
+                                                    <label tabindex="-1" for="tbg-check-2" class="btn-radio btn btn-outline-primary">Single session event</label>
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-3" value="3">
+                                                    <label tabindex="-1" for="tbg-check-3" class="btn-radio btn btn-outline-primary">Multi session event</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="answer-title" class="form-label">Category</label>
+                                                <small class="form-text d-flex mb-2">Allows you to easily track and group your events. Visit our academy help page for more information on categories.</small>
+                                                <select aria-label="Default select example" class="form-select form-select-lg">
+                                                    <option>Select or create a category</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
                                         </form>
 
                                     </div>
 
-                                    <div class="create-section mb-8 pb-8 border-bottom">
+                                    <div id="#event-location" class="create-section mb-8 pb-8 border-bottom">
                                         
                                         <div class="mb-4">
                                             <h2 class="mb-0">Location</h2>
@@ -241,34 +278,128 @@
                                         </div>
 
                                         <form>
-                                            <div class="mb-3">
-                                                <label for="answer-title" class="form-label">Event title <span class="required text-red-600">*</span></label>
-                                                <input type="text" class="form-control" id="answer-title">
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label d-block">Is your event taking place in a venue, virtually or a hybrid of both? <span class="required text-red-600">*</span></label>
+                                                <div role="group" class="btn-checkbox-group btn-group">
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-4" value="1">
+                                                    <label tabindex="-1" for="tbg-check-4" class="btn-radio btn btn-outline-primary">Venue</label>
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-5" value="2">
+                                                    <label tabindex="-1" for="tbg-check-5" class="btn-radio btn btn-outline-primary">Online</label>
+                                                    <input class="btn-check" name="radio-check" type="radio" autocomplete="off" id="tbg-check-6" value="3">
+                                                    <label tabindex="-1" for="tbg-check-6" class="btn-radio btn btn-outline-primary">Hybrid</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="answer-title" class="form-label">Location <span class="required text-red-600">*</span></label>
+                                                <small class="form-text d-block mb-2">Select a venue so attendees know where to go. If you are unable to find a venue, <a href="">add a new location</a>.</small>
+                                                <select aria-label="Default select example" class="form-select form-select-lg">
+                                                    <option>Select or create a location</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                    <div id="#event-attendees" class="create-section mb-8 pb-8 border-bottom">
+                                        
+                                        <div class="mb-4">
+                                            <h2 class="mb-0">Attendee options</h2>
+                                            <p class="text-secondary">Help people discover your event and let attendees know where to show up.</p>
+                                        </div>
+
+                                        <form>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">Maximum number of attendees</label>
+                                                <input type="text" class="form-control form-control-lg" id="answer-title">
+                                            </div>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">Enable waitlist?</label>
+                                                <small class="form-text d-block mb-2">Once you define the maximum attendees for your event, any registrants over that number will be added to your event’s waiting list.</small>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" id="checked-switch" class="form-check-input">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="answer-title" class="form-label">Allow guests?</label>
+                                                <small class="form-text d-block mb-2">This feature lets users select how many guests they intend to bring to your event. Note: this choice can only be made via the event field on a form.</small>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" id="checked-switch" class="form-check-input" checked>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <label for="answer-title" class="form-label">Maximum number of guests</label>
+                                                    <input type="text" class="form-control form-control-lg" id="answer-title">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                    <div id="#event-styling" class="create-section mb-8 pb-8 border-bottom">
+                                        
+                                        <div class="mb-4">
+                                            <h2 class="mb-0">Styling</h2>
+                                            <p class="text-secondary">Level up and make your event stand out.</p>
+                                        </div>
+
+                                        <form>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">Event description</label>
+                                                <textarea rows="8" id="defaultTextarea" class="form-control"></textarea>
+                                            </div>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">Host(s)</label>
+                                                <small class="form-text d-block mb-2">Display host details within the event. <a href="">Create a new host</a>.</small>
+                                                <select aria-label="Default select example" class="form-select form-select-lg">
+                                                    <option>Select a host</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
                                             <div class="row">
                                                 <div class="col">
-                                                    <label for="answer-title" class="form-label">Event starts at <span class="required text-red-600">*</span></label>
-                                                    <div class="input-icon input-icon-left">
-                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control">
-                                                        <i class="far fa-calendar-days"></i>
-                                                    </div>
+                                                    <label for="answer-title" class="form-label d-block">Header image</label>
+                                                    <button type="button" class="btn-icon-left btn btn-secondary">
+                                                        <i class="far fa-upload"></i>Upload image
+                                                    </button>
+                                                    <small class="form-text d-block mt-2">Displayed on the embedded event, event field and RSVP pages - 1536px(w) x 500px(h) in JPG.</small>
                                                 </div>
                                                 <div class="col">
-                                                    <label for="answer-title" class="form-label">Event ends at <span class="required text-red-600">*</span></label>
+                                                    <label for="answer-title" class="form-label d-block">Event colour</label>
                                                     <div class="input-icon input-icon-left">
-                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" class="form-control">
-                                                        <i class="far fa-calendar-days"></i>
+                                                        <input placeholder="Choose date and time" type="text" id="iconLeft" value="#F97316" class="form-control form-control-lg">
+                                                        <i class="fas fa-circle text-orange-500"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col">
-                                                    <label for="answer-title" class="form-label">Timezone <span class="required text-red-600">*</span></label>
-                                                    <select aria-label="Default select example" class="form-select">
-                                                        <option>Select timezone</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                    <div id="#event-integrations" class="create-section mb-8 pb-8">
+                                        
+                                        <div class="mb-4">
+                                            <h2 class="mb-0">Integrations</h2>
+                                            <p class="text-secondary">Level up and make your event stand out.</p>
+                                        </div>
+
+                                        <form>
+                                            <div class="mb-8">
+                                                <label for="answer-title" class="form-label">CRM integration</label>
+                                                <input placeholder="Your CRM value" type="text" class="form-control form-control-lg">
+                                            </div>
+                                            <div class="mb-">
+                                                <label for="answer-title" class="form-label">GeckoChat integration</label>
+                                                <small class="form-text d-block mb-2">Select a live chat widget from your instance of GeckoChat to be embedded onto the RSVP page for this event.</small>
+                                                <select aria-label="Default select example" class="form-select form-select-lg">
+                                                    <option>Select a host</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
                                         </form>
 
@@ -313,7 +444,7 @@
             <div class="modal-content">
                 <div class="search-input position-relative border-bottom d-flex align-items-center">
                     <i class="search-icon far fa-search position-absolute text-primary"></i>
-                    <input placeholder="Search Gecko Chat" type="search" class="form-control position-relative p-4">
+                    <input placeholder="Search Gecko Chat" type="search" class="form-control form-control-lg position-relative p-4">
                     <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-2">

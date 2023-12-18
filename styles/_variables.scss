@@ -981,7 +981,7 @@ $form-group-margin:                     $spacer * 2;
 $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
-$form-text-font-weight:                 $font-weight-medium !default;
+$form-text-font-weight:                 $font-weight-normal !default;
 $form-text-color:                       $text-muted !default;
 // scss-docs-end form-text-variables
 
@@ -989,7 +989,7 @@ $form-text-color:                       $text-muted !default;
 $form-label-margin-bottom:              4px !default;
 $form-label-font-size:                  $font-size-base !default;
 $form-label-font-style:                 null !default;
-$form-label-font-weight:                $font-weight-semibold !default;
+$form-label-font-weight:                $font-weight-medium !default;
 $form-label-color:                      $primary !default;
 // scss-docs-end form-label-variables
 
@@ -998,7 +998,7 @@ $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
-$input-font-weight:                     $font-weight-medium !default;
+$input-font-weight:                     $font-weight-normal !default;
 $input-line-height:                     $input-btn-line-height !default;
 
 $input-padding-y-sm:                    $input-btn-padding-y-sm !default;
@@ -1469,8 +1469,8 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer * 2 !default;
-$card-spacer-x:                     $spacer * 2 !default;
+$card-spacer-y:                     $spacer * 3 !default;
+$card-spacer-x:                     $spacer * 3 !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 $grey-300 !default;
